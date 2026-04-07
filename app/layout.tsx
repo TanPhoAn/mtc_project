@@ -16,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="vi" className="scroll-smooth">
 
         <body className={`${inter.className} bg-white text-gray-900`}>
-        <link rel="icon" type="image/png" href="/favicon_mtc.png"/>
+        <link rel="shortcut icon" type="image/png" href="/favicon_mtc.png"/>
         {/* TOP BAR */}
         <div className="bg-[#1e3a8a] text-white py-2 px-6 text-xs md:text-sm flex justify-between items-center">
             <div className="flex space-x-4">
