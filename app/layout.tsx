@@ -1,12 +1,22 @@
 import './globals.css';
 import { Inter } from 'next/font/google';
+import type { Metadata } from 'next';
 
+export const metadata: Metadata = {
+    title: 'Minh Thanh MTC - Thi công điện chuyên nghiệp',
+    description: 'Công ty TNHH Minh Thanh Limited Company',
+    icons: {
+        icon: '/favicon_mtc.png',
+    },
+};
 const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="vi" className="scroll-smooth">
+
         <body className={`${inter.className} bg-white text-gray-900`}>
+        <link rel="icon" type="image/png" href="/favicon_mtc.png"/>
         {/* TOP BAR */}
         <div className="bg-[#1e3a8a] text-white py-2 px-6 text-xs md:text-sm flex justify-between items-center">
             <div className="flex space-x-4">
@@ -26,7 +36,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="flex items-center">
                     <div className="leading-tight">
                         <h1 className="text-xl font-bold text-red-600 uppercase">Minh Thanh</h1>
-                        <p className="text-[10px] font-semibold text-blue-900 tracking-tighter uppercase">Minh Thanh Limited Company</p>
+                        <p className="text-[10px] font-semibold text-blue-900 tracking-tighter uppercase">Minh Thanh
+                            Limited Company</p>
                     </div>
                 </div>
                 <div className="hidden md:flex space-x-8 font-semibold text-gray-700">
