@@ -44,32 +44,34 @@ export default function LandingPage() {
 
 
             </section>
-            <section className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden px-10 pb-5">
+            <section >
 
+                <div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden px-10 pb-5">
+                    <div className="flex-[1] ">
+                        <img
+                            src="/2026_MTC_WEB/2026_MTC_WEB_ANH/MTC%20MAT%20DUNG%20-%20se%20thay%20anh%20khac.jpg"
+                            alt="Văn phòng Minh Thanh"
+                            className=" object-cover"
+                        />
+                    </div>
 
-                <div className="flex-[1] ">
-                    <img
-                        src="/2026_MTC_WEB/2026_MTC_WEB_ANH/MTC%20MAT%20DUNG%20-%20se%20thay%20anh%20khac.jpg"
-                        alt="Văn phòng Minh Thanh"
-                        className=" object-cover"
-                    />
-                </div>
-
-                {/* 2. Phần Chữ: Chiếm 40% (flex-[2]) và cao bằng ảnh */}
-                <div className="flex-[1] bg-white md:p-12 flex flex-col text-justify justify-center">
-                    <div className="text-3xl font-normal not-italic text-[#292c8f] leading-16">
-                        <p>
-                            Thành lập từ năm 2000, <span className="font-bold">Công ty TNHH Minh Thanh</span> là nhà thầu uy tín với hơn 25 năm kinh nghiệm chuyên tư vấn, lắp đặt hệ thống điện đến 35kV, chiếu sáng đô thị và năng lượng mặt trời.
-                        </p>
-                        <br/>
-                        <p>
-                            Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững. Lấy phương châm <span className="font-bold  ">"Niềm tin của bạn!"</span> làm kim chỉ nam, <span className="font-bold uppercase">công ty TNHH Minh Thanh</span> không ngừng nỗ lực đồng hành cùng sự thịnh vượng của quý khách hàng.
-                        </p>
+                    {/* 2. Phần Chữ: Chiếm 40% (flex-[2]) và cao bằng ảnh */}
+                    <div className="flex-[1] bg-white md:p-12 flex flex-col text-justify justify-center">
+                        <div className="text-3xl font-normal not-italic text-[#292c8f] leading-16">
+                            <p>
+                                Thành lập từ năm 2000, <span className="font-bold">Công ty TNHH Minh Thanh</span> là nhà thầu uy tín với hơn 25 năm kinh nghiệm chuyên tư vấn, lắp đặt hệ thống điện đến 35kV, chiếu sáng đô thị và năng lượng mặt trời.
+                            </p>
+                            <br/>
+                            <p>
+                                Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững. Lấy phương châm <span className="font-bold  ">"Niềm tin của bạn!"</span> làm kim chỉ nam, <span className="font-bold uppercase">công ty TNHH Minh Thanh</span> không ngừng nỗ lực đồng hành cùng sự thịnh vượng của quý khách hàng.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div className={"button text-[#292c8f] text-end"}>
-                    <a href="#">Xem thêm </a>
-                </div>
+
+               <div className={"xem-them-btn text-[#292c8f] bg-white text-end pr-10 pb-2 -mt-20 text-3xl font-normal not-italic"}>
+                   <a href="#" >Xem thêm    ...</a>
+               </div>
 
             </section>
             {/* PROJECTS SECTION - Giữ nguyên */}
