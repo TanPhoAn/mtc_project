@@ -11,7 +11,7 @@ export default function LandingPage() {
                 "MẶT TRỜI 1MVA", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/thi-cong-he-thong-pin-nang-luong-mat-troi-1mva-tinh-dong-thap.png" },
         { title: "CÔNG TRÌNH CẤP ĐIỆN NHÀ MÁY BIA \n" +
                 "\n" +
-                "KHU CÔNG NGHIỆP TRẦN QUỐC TOẢN", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/CONG_TRINH_CAP_DIEN_NHA_MAY_BIA.png" },
+                "KHU CÔNG NGHIỆP TRẦN QUỐC TOẢN", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/thi-cong-he-thong-pin-nang-luong-mat-troi-1mva-tinh-dong-thap.jpg" },
     ];
 
     return (
