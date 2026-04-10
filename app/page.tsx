@@ -77,6 +77,55 @@ export default function LandingPage() {
                </div>
 
             </section>
+            {/*linh vuc hoat dong section*/}
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-6">
+                    {/* Tiêu đề phần */}
+                    <h2 className="text-4xl font-extrabold text-[#292c8f] uppercase text-center mb-16 tracking-tight">
+                        Lĩnh vực hoạt động
+                    </h2>
+
+                    {/* Lưới các dịch vụ */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                        {/* Card 1: Điện công nghiệp */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-[#292c8f] group">
+                            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">🏭</div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-3">Điện công nghiệp & Dân dụng</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">Thi công, lắp đặt hệ thống điện trọn gói cho nhà máy và hộ gia đình.</p>
+                        </div>
+
+                        {/* Card 2: Trạm biến áp */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-red-600 group">
+                            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">⚡</div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-3">Đường dây & Trạm biến áp</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">Thi công hệ thống đường dây và trạm biến áp lên đến 35kV.</p>
+                        </div>
+
+                        {/* Card 3: Chiếu sáng đô thị */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-[#292c8f] group">
+                            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">💡</div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-3">Chiếu sáng đô thị</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">Giải pháp chiếu sáng đường phố, khu đô thị hiện đại và tiết kiệm điện.</p>
+                        </div>
+
+                        {/* Card 4: Năng lượng mặt trời */}
+                        <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border-t-4 border-red-600 group">
+                            <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">☀️</div>
+                            <h3 className="text-xl font-bold text-gray-800 mb-3">Năng lượng mặt trời</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">Thi công, lắp đặt hệ thống pin năng lượng mặt trời tối ưu hiệu suất cho doanh nghiệp, hộ gia đình.</p>
+                        </div>
+
+                    </div>
+
+                    {/* Nút xem thêm phía dưới */}
+                    <div className="text-center mt-16">
+                        <button className="px-10 py-3 border-2 border-[#292c8f] text-[#292c8f] font-bold rounded-full hover:bg-[#292c8f] hover:text-white transition-all duration-300 uppercase tracking-wider">
+                            Tìm hiểu chi tiết dịch vụ
+                        </button>
+                    </div>
+                </div>
+            </section>
             {/* PROJECTS SECTION - Giữ nguyên */}
             {/* PROJECTS SECTION */}
             <section id="projects" className="py-20 max-w-7xl mx-auto px-6 bg-white">
