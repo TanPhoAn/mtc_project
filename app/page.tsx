@@ -47,41 +47,42 @@ export default function LandingPage() {
 
 
             </section>
-            <section className={"bg-white"}>
-
-                <div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden px-10 pb-5">
-                    <div className="flex-[1] ">
+            <section className="bg-white py-8 md:py-0">
+                <div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden px-4 md:px-10 pb-5">
+                    {/* 1. Phần Ảnh */}
+                    <div className="flex-1">
                         <img
                             src="/2026_MTC_WEB/2026_MTC_WEB_ANH/MTC%20MAT%20DUNG%20-%20se%20thay%20anh%20khac.jpg"
                             alt="Văn phòng Minh Thanh"
-                            className=" object-cover"
+                            className="w-full h-full object-cover rounded-lg md:rounded-none"
                         />
                     </div>
 
-                    {/* 2. Phần Chữ: Chiếm 40% (flex-[2]) và cao bằng ảnh */}
-                    <div className="flex-[1] bg-white md:p-12 flex flex-col text-justify justify-center">
-                        <div className="text-3xl font-normal not-italic text-[#292c8f] leading-16">
+                    {/* 2. Phần Chữ */}
+                    <div className="flex-1 bg-white p-4 md:p-12 flex flex-col text-justify justify-center">
+                        {/* Fix leading: mobile dùng relaxed (vừa phải), desktop dùng leading-[3rem] (thoáng) */}
+                        <div className="text-base md:text-2xl lg:text-3xl font-normal not-italic text-[#292c8f] leading-relaxed md:leading-[3rem] lg:leading-[4rem]">
                             <p>
                                 Thành lập từ năm 2000, <span className="font-bold">Công ty TNHH Minh Thanh</span> là nhà thầu uy tín với hơn 25 năm kinh nghiệm chuyên tư vấn, lắp đặt hệ thống điện đến 35kV, chiếu sáng đô thị và năng lượng mặt trời.
                             </p>
-                            <br/>
+                            <br className="hidden md:block" /> {/* Ẩn bớt khoảng trống trên mobile */}
                             <p>
                                 Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững. Lấy phương châm <span className="font-bold">&quot;Niềm tin của bạn!&quot;</span> làm kim chỉ nam, <span className="font-bold uppercase">công ty TNHH Minh Thanh</span> không ngừng nỗ lực đồng hành cùng sự thịnh vượng của quý khách hàng.
                             </p>
                         </div>
+
+                        {/* Chữ Xem thêm: Đưa vào trong flex container để nó luôn bám sát đoạn văn mà không cần margin âm quá đà */}
+                        <div className="text-[#292c8f] text-right mt-4 md:mt-6 text-lg md:text-2xl lg:text-3xl font-normal italic">
+                            <a href="#" className="hover:underline">Xem thêm...</a>
+                        </div>
                     </div>
                 </div>
-
-               <div className={"xem-them-btn text-[#292c8f] bg-white text-end pr-12 pb-2 -mt-20 text-3xl font-normal not-italic"}>
-                   <a href="#" >Xem thêm    ...</a>
-               </div>
-
             </section>
             {/*linh vuc hoat dong section*/}
             <section className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">
                     {/* Tiêu đề phần */}
-                    <h2 className="text-4xl font-extrabold text-[#292c8f] uppercase text-center mb-16 tracking-tight">
+                    <h2 className="text-[22px] sm:text-2xl md:text-4xl font-extrabold text-[#292c8f] uppercase text-center mb-10 md:mb-16 tracking-tighter md:tracking-tight whitespace-nowrap">
                         Lĩnh vực hoạt động
                     </h2>
 
