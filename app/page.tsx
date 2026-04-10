@@ -2,14 +2,20 @@
 
 export default function LandingPage() {
     const projectsData = [
-        { title: "Trạm Biến Áp 2.5 MVA", description: "KCN Sa Đéc, Đồng Tháp.", img: "https://via.placeholder.com/600x400" },
-        { title: "Hệ Thống Điện Mặt Trời 1MW", description: "Dự án tại Hồng Ngự.", img: "https://via.placeholder.com/600x400" },
-        { title: "Chiếu Sáng Đô Thị", description: "Lắp đặt đèn LED đường phố.", img: "https://via.placeholder.com/600x400" },
-        { title: "Đường Dây Trung Thế 35kV", description: "Thi công băng qua sông Tiền.", img: "https://via.placeholder.com/600x400" },
+        { title: "CẢI TẠO, NÂNG CẤP TBA 2 x 3P -2 MVA,\n" +
+                "220,4KV", description: "CỤM CÔNG NGHIỆP \n" +
+                "\n" +
+                "THANH BÌNH - ĐỒNG THÁP", img: "2026_MTC_WEB/2026_MTC_WEB_ANH/CẢI TẠO, NÂNG CẤP TBA 2 x 3P -2 MVA, 220,4KV TẠI CỤM CONG NGHIỆP THANH BÌNH-ĐỒNG THÁP.JPG" },
+        { title: "NHÁNH RẼ 3P-22KV VƯỢT NHÁNH SÔNG TIỀN TẠO MẠCH VÒNG CẤP ĐIỆN", description: "AN GIANG - ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/NHÁNH RẼ 3P-22KV VƯỢT NHÁNH SÔNG TIỀN TẠO MẠCH VÒNG CẤP ĐIỆN TỪ AN GIANG- ĐỒNG THÁP (4).jpg" },
+        { title: "THI CÔNG HỆ THỐNG PIN NĂNG LƯỢNG\n" +
+                "MẶT TRỜI 1MVA", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/THI CÔNG HỆ THỐNG PIN NĂNG LƯỢNG MẶT TRỜI 1MVA - TỈNH ĐỒNG THÁP.png" },
+        { title: "CÔNG TRÌNH CẤP ĐIỆN NHÀ MÁY BIA \n" +
+                "\n" +
+                "KHU CÔNG NGHIỆP TRẦN QUỐC TOẢN", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/CÔNG TRÌNH CẤP ĐIỆN NHÀ MÁY BIA.png" },
     ];
 
     return (
-        <main>
+        <main className={"bg-white"}>
             {/* HERO SECTION - Tối ưu lại tỷ lệ 80/20 hoặc 75/25 */}
             <section className="relative h-auto md:h-[40vh] flex flex-col md:flex-row items-center justify-between bg-white px-6 md:px-16 py-8 gap-8">
 
@@ -44,7 +50,7 @@ export default function LandingPage() {
 
 
             </section>
-            <section >
+            <section className={"bg-white"}>
 
                 <div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden px-10 pb-5">
                     <div className="flex-[1] ">
@@ -63,30 +69,56 @@ export default function LandingPage() {
                             </p>
                             <br/>
                             <p>
-                                Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững. Lấy phương châm <span className="font-bold  ">"Niềm tin của bạn!"</span> làm kim chỉ nam, <span className="font-bold uppercase">công ty TNHH Minh Thanh</span> không ngừng nỗ lực đồng hành cùng sự thịnh vượng của quý khách hàng.
+                                Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững. Lấy phương châm <span className="font-bold">&quot;Niềm tin của bạn!&quot;</span> làm kim chỉ nam, <span className="font-bold uppercase">công ty TNHH Minh Thanh</span> không ngừng nỗ lực đồng hành cùng sự thịnh vượng của quý khách hàng.
                             </p>
                         </div>
                     </div>
                 </div>
 
-               <div className={"xem-them-btn text-[#292c8f] bg-white text-end pr-10 pb-2 -mt-20 text-3xl font-normal not-italic"}>
+               <div className={"xem-them-btn text-[#292c8f] bg-white text-end pr-12 pb-2 -mt-20 text-3xl font-normal not-italic"}>
                    <a href="#" >Xem thêm    ...</a>
                </div>
 
             </section>
             {/* PROJECTS SECTION - Giữ nguyên */}
-            <section id="projects" className="py-20 max-w-7xl mx-auto px-6">
-                <h2 className="text-3xl font-bold text-center mb-12 text-blue-900 uppercase">Công trình tiêu biểu</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* PROJECTS SECTION */}
+            <section id="projects" className="py-20 max-w-7xl mx-auto px-6 bg-white">
+                <h2 className="text-4xl font-bold text-center mb-12 text-blue-900 uppercase">Công trình tiêu biểu</h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {projectsData.map((project, index) => (
-                        <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition group border border-gray-100">
-                            <img src={project.img} className="w-full h-56 object-cover group-hover:scale-105 transition duration-500" alt={project.title} />
-                            <div className="p-6">
-                                <h3 className="text-xl font-bold text-blue-900 mb-2">{project.title}</h3>
-                                <p className="text-gray-600 text-sm">{project.description}</p>
+                        <div key={index} className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-gray-100 h-full">
+
+                            {/* Container ảnh với tỉ lệ cố định 16:9 hoặc 3:2 */}
+                            <div className="relative aspect-[1/1] overflow-hidden">
+                                <img
+                                    src={project.img}
+                                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                    alt={project.title}
+                                />
                             </div>
+
+                            {/* Nội dung chữ */}
+                            <div className="p-8 flex flex-col flex-grow">
+                                <h3 className="text-2xl font-bold text-blue-900 mb-3 line-clamp-2 min-h-[4rem] uppercase">
+                                    {project.title}
+                                </h3>
+                                <p className="text-gray-500 text-lg font-medium border-t pt-4 mt-auto">
+                                    {project.description}
+                                </p>
+                            </div>
+
                         </div>
                     ))}
+                </div>
+
+                <div className="text-center mt-12">
+                    <button
+                        type="button"
+                        className="px-8 py-4 bg-[#292c8f] text-white text-xl font-bold rounded-lg shadow-md hover:bg-blue-800 hover:shadow-lg active:scale-95 transition-all duration-200 uppercase"
+                    >
+                        Xem thêm các dự án khác
+                    </button>
                 </div>
             </section>
 
