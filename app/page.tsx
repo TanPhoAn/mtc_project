@@ -11,26 +11,27 @@ export default function LandingPage() {
     return (
         <main className={"bg-white"}>
             {/* HERO SECTION - Tối ưu lại tỷ lệ 80/20 hoặc 75/25 */}
-            <section className="relative h-auto md:h-[40vh] flex flex-col md:flex-row items-center justify-center md:justify-between bg-white px-4 md:px-16 py-8 md:py-8 gap-6 md:gap-8">
+            <section className="relative h-auto flex flex-row items-center justify-between bg-white px-2 md:px-16 py-6 md:py-8 gap-2 md:gap-8">
 
-                {/* Banner: Mobile chiếm full ngang, lên Desktop mới chia lại flex */}
-                <div className="w-full md:flex-1 flex justify-center md:justify-start">
+                {/* Banner: Chiếm phần lớn diện tích ngang */}
+                <div className="flex-[3] flex justify-start items-center">
                     <img
                         src="/2026_MTC_WEB/2026_MTC_WEB_ANH/2026%20WEB-BANG%20HIEU.png"
                         alt="Minh Thanh Banner"
-                        /* Mobile: h-auto và w-full để nó bung hết cỡ. Desktop: giới hạn max-h để không quá thô */
-                        className="h-auto w-full max-w-[90%] md:max-w-full md:max-h-[35vh] object-contain"
+                        /* w-full để nó bung theo diện tích flex-[3], max-h để không quá cao trên Desktop */
+                        className="w-full h-auto max-h-[20vh] md:max-h-[40vh] object-contain"
                     />
                 </div>
 
-                {/* Icon TTP: Mobile thu nhỏ lại một chút để không chiếm chỗ Banner */}
-                <div className="flex justify-center items-center w-24 sm:w-32 md:w-48 lg:w-56">
+                {/* Icon TTP: Chiếm phần nhỏ, cố định kích thước tối đa trên mobile để không lấn sân */}
+                <div className="flex-1 flex justify-end items-center min-w-[60px] max-w-[80px] md:max-w-[180px]">
                     <img
                         src="/2026_MTC_WEB/2026_MTC_WEB_ANH/LOGO%20TTP.jpg"
                         alt="TTP Certification"
-                        className="h-auto w-full object-contain border border-gray-100 shadow-sm rounded-sm"
+                        className="w-full h-auto object-contain border border-gray-100 shadow-sm rounded-sm"
                     />
                 </div>
+
             </section>
 
 
