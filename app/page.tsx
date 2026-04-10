@@ -5,7 +5,7 @@ export default function LandingPage() {
         { title: "CẢI TẠO, NÂNG CẤP TBA 2 x 3P -2 MVA,\n" +
                 "220,4KV", description: "CỤM CÔNG NGHIỆP \n" +
                 "\n" +
-                "THANH BÌNH - ĐỒNG THÁP", img: "2026_MTC_WEB/2026_MTC_WEB_ANH/CẢI TẠO, NÂNG CẤP TBA 2 x 3P -2 MVA, 220,4KV TẠI CỤM CONG NGHIỆP THANH BÌNH-ĐỒNG THÁP.JPG" },
+                "THANH BÌNH - ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/CAI-TAO-NANG-CAP-TBA2X3P-2MVA-220,4KV-TAI-CUM-CONG-NGHIEP-THANH-BINH-DONG-THAP.JPG" },
         { title: "NHÁNH RẼ 3P-22KV VƯỢT NHÁNH SÔNG TIỀN TẠO MẠCH VÒNG CẤP ĐIỆN", description: "AN GIANG - ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/NHÁNH RẼ 3P-22KV VƯỢT NHÁNH SÔNG TIỀN TẠO MẠCH VÒNG CẤP ĐIỆN TỪ AN GIANG- ĐỒNG THÁP (4).jpg" },
         { title: "THI CÔNG HỆ THỐNG PIN NĂNG LƯỢNG\n" +
                 "MẶT TRỜI 1MVA", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/THI CÔNG HỆ THỐNG PIN NĂNG LƯỢNG MẶT TRỜI 1MVA - TỈNH ĐỒNG THÁP.png" },
