@@ -187,8 +187,8 @@ export default function LandingPage() {
 
             </section>
 
-            {/* CONTACT SECTION  */}
-            <section className="py-16 bg-white max-w-7xl mx-auto px-4 md:px-10">
+            {/* tin tuc SECTION  */}
+            <section className="py-8 bg-white max-w-7xl mx-auto px-4 md:px-10">
                 {/* 1. Title Tin tức ở giữa */}
                 <h2 className="text-2xl md:text-4xl font-bold text-[#292c8f] uppercase text-center mb-12 tracking-tight">
                     Tin tức & Sự kiện
@@ -236,6 +236,109 @@ export default function LandingPage() {
                     </div>
                 </div>
             </section>
+
+            {/*lien he section*/}
+            <section id="contact" className="py-8 bg-white max-w-7xl mx-auto px-4 md:px-10">
+                {/* 1. Title Liên hệ ở giữa */}
+                <h2 className="text-2xl md:text-4xl font-bold text-[#292c8f] uppercase text-center mb-6 tracking-tight">
+                    Thông tin Liên hệ
+                </h2>
+
+                {/* 2. Flex Row Container - Layout giống hệt phần Tin tức */}
+                <div className="flex flex-col md:flex-row items-stretch gap-8 md:gap-10  pt-8">
+
+                    {/* BÊN TRÁI: Google Maps & Giờ làm việc */}
+                    <div className="flex-1 md:w-2/5 lg:max-w-[45%] flex flex-col-reverse gap-4">
+
+                        {/* 1. Khung bản đồ */}
+                        <div className="flex-1 border-4 border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <iframe
+                                className="w-full h-full min-h-[300px] md:min-h-[400px] border-0"
+                                allowFullScreen={true}
+                                loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.4059318600075!2d105.63601627529634!3d10.46863086479509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a65b3794f62c1%3A0xf4e14ef995cab253!2zMTY2IEzDqiBEdeG6qW4sIFBoxrDhu51uZyBN4bu5IFBow7osIE3hu7kgVHLDoCwgxJDhu5NuZyBUaMOhcCA4NzAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1775847530346!5m2!1svi!2s"
+                            ></iframe>
+                        </div>
+
+                        {/* 2. Khung Giờ làm việc  */}
+                        <div className="bg-[#292c8f] text-white p-5 rounded-xl shadow-sm flex flex-col sm:flex-row justify-between items-center gap-4">
+                            <div className="flex items-center gap-3">
+
+                                <div>
+                                    <p className="font-bold uppercase text-sm tracking-wider">Thời gian làm việc</p>
+                                    <p className="text-xs opacity-80">Thứ 2 — Thứ 7</p>
+                                </div>
+                            </div>
+
+                            <div className="flex gap-6 text-sm">
+                                <div className="text-center">
+                                    <p className="font-semibold">Sáng</p>
+                                    <p className="bg-white/20 px-2 py-1 rounded mt-1">07:30 - 11:30</p>
+                                </div>
+                                <div className="text-center">
+                                    <p className="font-semibold">Chiều</p>
+                                    <p className="bg-white/20 px-2 py-1 rounded mt-1">13:00 - 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* BÊN PHẢI: Thông tin công ty */}
+                    <div className="flex-1 flex flex-col justify-between py-2">
+                        <div>
+                            {/* Tên công ty */}
+                            <h3 className="text-xl md:text-2xl font-bold text-[#292c8f] mb-6 leading-snug text-center md:text-left uppercase">
+                                Trụ Sở Chính
+                            </h3>
+
+                            {/* Danh sách thông tin liên hệ */}
+                            <div className="space-y-4 text-gray-700 text-base md:text-lg">
+                                <div className="flex items-start gap-3">
+                                    <span className="text-[#292c8f] font-bold min-w-[100px]">Địa chỉ:</span>
+                                    <span>Số 166 Lê Duẩn, Phường Mỹ Trà, Đồng Tháp</span>
+                                </div>
+                                <div className="flex items-start gap-3 border-t pt-4">
+                                    <span className="text-[#292c8f] font-bold min-w-[100px]">Điện thoại:</span>
+                                    <a href="tel:02773123456" className="hover:text-red-600 transition-colors">02773 852 252 - 02773 857 4942</a>
+                                </div>
+                                <div className="flex items-start gap-3 border-t pt-4">
+                                    <span className="text-[#292c8f] font-bold min-w-[100px]">Email:</span>
+                                    <a href="mailto:minhthanhdt@gmail.com" className="hover:text-red-600 transition-colors">mtcdongthap@gmail.com</a>
+                                </div>
+                                <div className="flex items-start gap-3 border-t pt-4">
+                                    <span className="text-[#292c8f] font-bold    min-w-[100px]">Website:</span>
+                                    <a className="hover:text-blue-700 transition-colors" href="https://www.minhthanhelectric.com.vn">minhthanhelectric.com.vn</a>
+                                </div>
+                                <div className="flex items-start gap-3 border-t pt-4">
+                                    <span className="text-[#292c8f] font-bold min-w-[100px]">MST/TAX:</span>
+                                    <span>1400353072</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* phan xuong section */}
+                        <div>
+                            {/* Tên công ty */}
+                            <h3 className="text-xl md:text-2xl font-bold text-[#292c8f] mb-6 leading-snug text-center pt-5 md:text-left uppercase">
+                                Phân xưởng cơ điện lạnh
+                            </h3>
+
+                            {/* Danh sách thông tin liên hệ */}
+                            <div className="space-y-4 text-gray-700 text-base md:text-lg">
+                                <div className="flex items-start gap-3">
+                                    <span className="text-[#292c8f] font-bold min-w-[100px]">Địa chỉ:</span>
+                                    <span>Số 158-160 Lê Duẩn, Phường Mỹ Trà, Đồng Tháp</span>
+                                </div>
+                                <div className="flex items-start gap-3 border-t pt-4">
+                                    <span className="text-[#292c8f] font-bold min-w-[100px]">Điện thoại:</span>
+                                    <a href="tel:02773123456" className="hover:text-red-600 transition-colors">02773 858 169</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     );
 }
