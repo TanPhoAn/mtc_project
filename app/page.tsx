@@ -132,7 +132,7 @@ export default function LandingPage() {
                     <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-blue-900 uppercase ">ĐẠI LÝ CHÍNH HÃNG MÁY BIẾN THẾ THIBIDI NĂM 2026</h2>
                     <div className={"w-full flex justify-center"}>
                         <img
-                            src="/2026_MTC_WEB/2026_MTC_WEB_ANH/thibidi.webp"
+                            src="/2026_MTC_WEB/2026_MTC_WEB_ANH/thibidi.png"
                             alt="thibidi"
                             className="w-4/5 h-full object-cover rounded-lg md:rounded-none"
                         />
