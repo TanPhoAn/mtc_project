@@ -34,44 +34,47 @@ export default function LandingPage() {
 
             </section>
 
-
-            <section className={"anh-bia-container bg-white"}>
-                <div className={"anh-bia "}>
-                    <div className={"p-10"}>
-                        <img src="/2026_MTC_WEB/2026_MTC_WEB_ANH/ANH%20BIA.png" alt="anh bia"/>
+            <section className="anh-bia-container bg-white py-4 md:py-10">
+                <div className="anh-bia max-w-7xl mx-auto px-4 md:px-10">
+                    <div className="flex justify-center">
+                        <img
+                            src="/2026_MTC_WEB/2026_MTC_WEB_ANH/ANH%20BIA.png"
+                            alt="anh bia"
+                            /* Mobile: w-full để nhìn rõ. Desktop: chỉ chiếm 80-90% để tạo khoảng thở */
+                            className="w-full md:w-[90%] lg:w-[85%] h-auto object-contain rounded-xl shadow-lg"
+                        />
                     </div>
                 </div>
-
-
-
-
             </section>
-            <section className="bg-white py-8 md:py-0">
-                <div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden px-4 md:px-10 pb-5">
+            <section className="bg-white py-4 md:py-8">
+                <div className="flex flex-col md:flex-row items-stretch bg-white overflow-hidden px-4 md:px-10 pb-5 max-w-7xl mx-auto">
+
                     {/* 1. Phần Ảnh */}
-                    <div className="flex-1">
+                    <div className="flex-1 max-h-[490px] md:max-h-[500px] lg:max-h-[750px] overflow-hidden  rounded-lg shadow-md">
                         <img
                             src="/2026_MTC_WEB/2026_MTC_WEB_ANH/MTC%20MAT%20DUNG%20-%20se%20thay%20anh%20khac.jpg"
                             alt="Văn phòng Minh Thanh"
-                            className="w-full h-full object-cover rounded-lg md:rounded-none"
+                            className="  object-cover "
                         />
                     </div>
 
                     {/* 2. Phần Chữ */}
-                    <div className="flex-1 bg-white p-4 md:p-12 flex flex-col text-justify justify-center">
-                        {/* Fix leading: mobile dùng relaxed (vừa phải), desktop dùng leading-[3rem] (thoáng) */}
-                        <div className="text-base md:text-2xl lg:text-3xl font-normal not-italic text-[#292c8f] leading-relaxed md:leading-[3rem] lg:leading-[4rem]">
+                    <div className="flex-1 bg-white px-4 md:p-5 lg:p-8 flex flex-col text-justify justify-center sm:py-3 sm:px-0 ">
+                        {/* Giảm nhẹ line-height từ [3rem] xuống [2.5rem] để khớp với chiều cao 80% */}
+                        <div className="text-base md:text-xl lg:text-2xl font-normal not-italic text-[#292c8f] leading-relaxed md:leading-[2.5rem] lg:leading-[3.2rem]">
                             <p>
                                 Thành lập từ năm 2000, <span className="font-bold">Công ty TNHH Minh Thanh</span> là nhà thầu uy tín với hơn 25 năm kinh nghiệm chuyên tư vấn, lắp đặt hệ thống điện đến 35kV, chiếu sáng đô thị và năng lượng mặt trời.
                             </p>
-                            <br className="hidden md:block" /> {/* Ẩn bớt khoảng trống trên mobile */}
-                            <p>
-                                Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững. Lấy phương châm <span className="font-bold">&quot;Niềm tin của bạn!&quot;</span> làm kim chỉ nam, <span className="font-bold uppercase">công ty TNHH Minh Thanh</span> không ngừng nỗ lực đồng hành cùng sự thịnh vượng của quý khách hàng.
+
+                            <p className="hidden lg:block"> {/* Trên màn hình vừa, ẩn bớt đoạn này để không bị tràn chiều cao */}
+                                Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững.
+                            </p>
+                            <p className="lg:mt-2">
+                                Lấy phương châm <span className="font-bold">&quot;Niềm tin của bạn!&quot;</span> làm kim chỉ nam, <span className="font-bold uppercase">Minh Thanh</span> luôn đồng hành cùng quý khách.
                             </p>
                         </div>
 
-                        {/* Chữ Xem thêm: Đưa vào trong flex container để nó luôn bám sát đoạn văn mà không cần margin âm quá đà */}
-                        <div className="text-[#292c8f] text-right mt-4 md:mt-6 text-lg md:text-2xl lg:text-3xl font-normal italic">
+                        <div className="text-[#292c8f] text-right mt-1 md:mt-2 text-lg md:text-xl font-normal italic">
                             <a href="#" className="hover:underline">Xem thêm...</a>
                         </div>
                     </div>
