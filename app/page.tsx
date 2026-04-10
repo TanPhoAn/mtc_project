@@ -187,9 +187,54 @@ export default function LandingPage() {
 
             </section>
 
-            {/* CONTACT SECTION - Giữ nguyên */}
-            <section id="contact" className="bg-gray-100 py-20 px-6">
-                {/* ... code cũ của ông ... */}
+            {/* CONTACT SECTION  */}
+            <section className="py-16 bg-white max-w-7xl mx-auto px-4 md:px-10">
+                {/* 1. Title Tin tức ở giữa */}
+                <h2 className="text-2xl md:text-4xl font-bold text-[#292c8f] uppercase text-center mb-12 tracking-tight">
+                    Tin tức & Sự kiện
+                </h2>
+
+                {/* 2. Flex Row Container */}
+                <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-10 border-b pb-10">
+
+                    {/* BÊN TRÁI: Ảnh tin tức */}
+                    <div className="flex-1 md:w-2/5 lg:max-w-[40%]">
+                        <div className="h-full border-4 border-gray-100 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <img
+                                src="/2026_MTC_WEB/2026_MTC_WEB_ANH/MTC - LE KY KET THUC TAP/4.jpg"
+                                alt="Tin tức Minh Thanh"
+                                /* - md:h-full + object-cover: Giúp ảnh cao bằng cột text bên cạnh ở màn hình >768px
+                                   - aspect-video trên mobile để ảnh không bị quá cao choán màn hình
+                                */
+                                className="w-full h-full object-cover aspect-video md:aspect-auto"
+                            />
+                        </div>
+                    </div>
+
+                    {/* BÊN PHẢI: Flex Col cho Title và Content */}
+                    <div className="flex-1 flex flex-col justify-between py-2">
+                        <div>
+                            {/* Title Tin tức: Fix căn lề trên mobile */}
+                            <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 leading-snug  md:text-left text-justify ">
+                                LỄ THỎA THUẬN HỢP TÁC GIỮA TRƯỜNG CAO ĐẢNG CƠ ĐIỆN NÔNG NGHIỆP VÀ MÔI TRƯỜNG VỚI CÔNG TY TNHH MINH THANH
+                            </h3>
+
+                            {/* Content: text-justify giúp căn đều hai bên cực đẹp */}
+                            <div className="text-gray-600 text-base md:text-lg text-justify leading-relaxed md:line-clamp-6 lg:line-clamp-none">
+                                <p>
+                                    Ngày 12/3/2026 tại CƠ SỞ ĐÀO TẠO NGHỀ ĐỒNG THÁP - P. CAO LÃNH trực thuộc Trường CAO ĐẲNG NGHỀ - BỘ NÔNG NGHIỆP VÀ MÔI TRƯỜNG đã diễn ra LỄ KÝ KẾT THOẢ THUẬN HỢP TÁC với CTY TNHH MINH THANH tiếp nhận học sinh - sinh viên đi thực tập sản xuất nâng cao tay nghề điện công nghiệp, dân dụng...
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Nút xem chi tiết - Luôn nằm dưới cùng của cột */}
+                        <div className="mt-6 text-center md:text-right">
+                            <a href="#" className="text-[#292c8f] font-bold italic hover:text-red-600 transition-all">
+                                Xem thêm...
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
     );
