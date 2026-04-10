@@ -2,10 +2,7 @@
 
 export default function LandingPage() {
     const projectsData = [
-        { title: "CẢI TẠO, NÂNG CẤP TBA 2 x 3P -2 MVA,\n" +
-                "220,4KV", description: "CỤM CÔNG NGHIỆP \n" +
-                "\n" +
-                "THANH BÌNH - ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/CAI-TAO-NANG-CAP-TBA2X3P-2MVA-220,4KV-TAI-CUM-CONG-NGHIEP-THANH-BINH-DONG-THAP.JPG" },
+        { title: "CẢI TẠO, NÂNG CẤP TBA 2 x 3P -2 MVA, 220,4KV", description: "CỤM CÔNG NGHIỆP THANH BÌNH - ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/CAI-TAO-NANG-CAP-TBA2X3P-2MVA-220,4KV-TAI-CUM-CONG-NGHIEP-THANH-BINH-DONG-THAP.JPG" },
         { title: "NHÁNH RẼ 3P-22KV VƯỢT NHÁNH SÔNG TIỀN TẠO MẠCH VÒNG CẤP ĐIỆN", description: "AN GIANG - ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/nhanh-re-3p-22kv-vuot-nhanh-song-tien-tao-mach-vong-cap-dien-tu-an-giang-dong-thap.jpg" },
         { title: "THI CÔNG HỆ THỐNG PIN NĂNG LƯỢNG MẶT TRỜI 1MVA", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/thi-cong-he-thong-pin-nang-luong-mat-troi-1mva-tinh-dong-thap.jpg" },
         { title: "CÔNG TRÌNH CẤP ĐIỆN NHÀ MÁY BIA KHU CÔNG NGHIỆP TRẦN QUỐC TOẢN", description: "TỈNH ĐỒNG THÁP", img: "/2026_MTC_WEB/2026_MTC_WEB_ANH/CONG_TRINH_CAP_DIEN_NHA_MAY_BIA.png" },
@@ -147,7 +144,7 @@ export default function LandingPage() {
 
                             {/* Nội dung chữ */}
                             <div className="p-8 flex flex-col flex-grow">
-                                <h3 className="text-2xl font-bold text-blue-900 mb-3 line-clamp-2 min-h-[4rem] uppercase">
+                                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-900 mb-3 line-clamp-3 min-h-[4rem] md:min-h-[5rem] uppercase leading-tight md:leading-snug">
                                     {project.title}
                                 </h3>
                                 <p className="text-gray-500 text-lg font-medium border-t pt-4 mt-auto">
