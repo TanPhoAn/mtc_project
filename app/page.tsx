@@ -11,26 +11,29 @@ export default function LandingPage() {
     return (
         <main className={"bg-white"}>
             {/* HERO SECTION - Tối ưu lại tỷ lệ 80/20 hoặc 75/25 */}
-            <section className="relative h-auto md:h-[40vh] flex flex-col md:flex-row items-center justify-between bg-white px-6 md:px-16 py-8 gap-8">
+            <section className="relative h-auto md:h-[40vh] flex flex-col md:flex-row items-center justify-center md:justify-between bg-white px-4 md:px-16 py-8 md:py-8 gap-6 md:gap-8">
 
-                {/* Banner bên trái: MTC và khung chữ giữa */}
-                <div className="flex-1 flex justify-center md:justify-start w-full">
+                {/* Banner: Mobile chiếm full ngang, lên Desktop mới chia lại flex */}
+                <div className="w-full md:flex-1 flex justify-center md:justify-start">
                     <img
                         src="/2026_MTC_WEB/2026_MTC_WEB_ANH/2026%20WEB-BANG%20HIEU.png"
                         alt="Minh Thanh Banner"
-                        className="max-h-[25vh] md:max-h-[30vh] w-auto object-contain"
+                        /* Mobile: h-auto và w-full để nó bung hết cỡ. Desktop: giới hạn max-h để không quá thô */
+                        className="h-auto w-full max-w-[90%] md:max-w-full md:max-h-[35vh] object-contain"
                     />
                 </div>
 
-                {/* Icon TTP: Scale to lên gần bằng chiều cao cụm chữ */}
-                <div className="flex justify-center items-center w-32 md:w-48 lg:w-56">
+                {/* Icon TTP: Mobile thu nhỏ lại một chút để không chiếm chỗ Banner */}
+                <div className="flex justify-center items-center w-24 sm:w-32 md:w-48 lg:w-56">
                     <img
                         src="/2026_MTC_WEB/2026_MTC_WEB_ANH/LOGO%20TTP.jpg"
                         alt="TTP Certification"
-                        className="w-full h-auto object-contain border border-gray-100 shadow-sm rounded-sm"
+                        className="h-auto w-full object-contain border border-gray-100 shadow-sm rounded-sm"
                     />
                 </div>
             </section>
+
+
             <section className={"anh-bia-container bg-white"}>
                 <div className={"anh-bia "}>
                     <div className={"p-10"}>
@@ -122,46 +125,62 @@ export default function LandingPage() {
                     </div>
                 </div>
             </section>
-            {/* PROJECTS SECTION - Giữ nguyên */}
+
+            <section className={"thibidi-container"}>
+                <div className="flex flex-col items-stretch bg-white overflow-hidden px-4 md:px-10 py-5">
+                    <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-blue-900 uppercase ">ĐẠI LÝ CHÍNH HÃNG MÁY BIẾN THẾ THIBIDI NĂM 2026</h2>
+                    <div className={"w-full flex justify-center"}>
+                        <img
+                            src="/2026_MTC_WEB/2026_MTC_WEB_ANH/thibidi.webp"
+                            alt="thibidi"
+                            className="w-4/5 h-full object-cover rounded-lg md:rounded-none"
+                        />
+                    </div>
+                </div>
+            </section>
+
             {/* PROJECTS SECTION */}
-            <section id="projects" className="py-20 max-w-7xl mx-auto px-6 bg-white">
-                <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-blue-900 uppercase">Công trình tiêu biểu</h2>
+            <section id="projects" className="py-24 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-6">
+                    <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-blue-900 uppercase">Công trình tiêu biểu</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                    {projectsData.map((project, index) => (
-                        <div key={index} className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-gray-100 h-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        {projectsData.map((project, index) => (
+                            <div key={index} className="flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-2xl transition-all duration-300 group border border-gray-100 h-full">
 
-                            {/* Container ảnh với tỉ lệ cố định 16:9 hoặc 3:2 */}
-                            <div className="relative aspect-[1/1] overflow-hidden">
-                                <img
-                                    src={project.img}
-                                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
-                                    alt={project.title}
-                                />
+                                {/* Container ảnh với tỉ lệ cố định 16:9 hoặc 3:2 */}
+                                <div className="relative aspect-[1/1] overflow-hidden">
+                                    <img
+                                        src={project.img}
+                                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                                        alt={project.title}
+                                    />
+                                </div>
+
+                                {/* Nội dung chữ */}
+                                <div className="p-8 flex flex-col flex-grow">
+                                    <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-900 mb-3 line-clamp-3 min-h-[4rem] md:min-h-[5rem] uppercase leading-tight md:leading-snug">
+                                        {project.title}
+                                    </h3>
+                                    <p className="text-gray-500 text-lg font-medium border-t pt-4 mt-auto">
+                                        {project.description}
+                                    </p>
+                                </div>
+
                             </div>
+                        ))}
+                    </div>
 
-                            {/* Nội dung chữ */}
-                            <div className="p-8 flex flex-col flex-grow">
-                                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-blue-900 mb-3 line-clamp-3 min-h-[4rem] md:min-h-[5rem] uppercase leading-tight md:leading-snug">
-                                    {project.title}
-                                </h3>
-                                <p className="text-gray-500 text-lg font-medium border-t pt-4 mt-auto">
-                                    {project.description}
-                                </p>
-                            </div>
-
-                        </div>
-                    ))}
+                    <div className="text-center mt-12">
+                        <button
+                            type="button"
+                            className="px-8 py-4 bg-[#292c8f] text-white text-xl font-bold rounded-lg shadow-md hover:bg-blue-800 hover:shadow-lg active:scale-95 transition-all duration-200 uppercase"
+                        >
+                            Xem thêm các dự án khác
+                        </button>
+                    </div>
                 </div>
 
-                <div className="text-center mt-12">
-                    <button
-                        type="button"
-                        className="px-8 py-4 bg-[#292c8f] text-white text-xl font-bold rounded-lg shadow-md hover:bg-blue-800 hover:shadow-lg active:scale-95 transition-all duration-200 uppercase"
-                    >
-                        Xem thêm các dự án khác
-                    </button>
-                </div>
             </section>
 
             {/* CONTACT SECTION - Giữ nguyên */}
