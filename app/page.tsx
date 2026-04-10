@@ -30,8 +30,6 @@ export default function LandingPage() {
                         className="w-full h-auto object-contain border border-gray-100 shadow-sm rounded-sm"
                     />
                 </div>
-
-
             </section>
             <section className={"anh-bia-container bg-white"}>
                 <div className={"anh-bia "}>
@@ -127,7 +125,7 @@ export default function LandingPage() {
             {/* PROJECTS SECTION - Giữ nguyên */}
             {/* PROJECTS SECTION */}
             <section id="projects" className="py-20 max-w-7xl mx-auto px-6 bg-white">
-                <h2 className="text-4xl font-bold text-center mb-12 text-blue-900 uppercase">Công trình tiêu biểu</h2>
+                <h2 className="text-2xl md:text-4xl font-bold text-center mb-12 text-blue-900 uppercase">Công trình tiêu biểu</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {projectsData.map((project, index) => (
