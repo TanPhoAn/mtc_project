@@ -29,32 +29,36 @@ export default function AboutPage() {
                                 <span className="font-bold text-[#292c8f]">Công ty TNHH Minh Thanh (MTC)</span> được thành lập từ năm 2000, là một trong những doanh nghiệp uy tín hàng đầu trong lĩnh vực thi công và lắp đặt hệ thống điện tại Đồng Tháp và các khu vực lân cận.
                             </p>
                             <p>
-                                Với đội ngũ hơn <span className="font-bold text-red-600">70 nhân sự</span> bao gồm các kỹ sư chuyên môn cao，công nhân lành nghề và các nhân viên văn phòng chuyên nghiệp, chúng tôi luôn đảm bảo tiến độ, chất lượng cũng như hiệu quả tuyệt đối cho mọi dự án.
+                                Với đội ngũ hơn <span className="font-bold text-red-600">70 nhân sự</span> bao gồm các kỹ sư chuyên môn cao, công nhân lành nghề và các nhân viên văn phòng chuyên nghiệp, chúng tôi luôn đảm bảo tiến độ, chất lượng cũng như hiệu quả tuyệt đối cho mọi dự án.
                             </p>
                             <p>
                                 Đặc biệt, Minh Thanh tự hào là <span className="font-bold">Đại lý ủy quyền của THIBIDI</span>, mang đến cho khách hàng những sản phẩm chất lượng cao, đáng tin cậy.
                             </p>
                         </div>
-
                     </div>
 
+                    {/* Cột chứa ảnh đã khống chế lại độ cao */}
                     <div className="relative">
-                        <div className="border-8 border-gray-100 rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="border-8 border-gray-100 rounded-2xl overflow-hidden shadow-2xl max-w-md mx-auto lg:ml-auto">
+                            {/* - aspect-[4/5]: Khống chế tỉ lệ ảnh (không quá dài như 641x959)
+                   - md:max-h-[500px]: Giới hạn chiều cao tuyệt đối để cân với text bên trái
+                */}
                             <img
                                 src="/2026_MTC_WEB/2026_MTC_WEB_ANH/MTC%20MAT%20DUNG%20-%20se%20thay%20anh%20khac.jpg"
                                 alt="Văn phòng Minh Thanh"
-                                className="w-full h-full object-cover"
+                                className="w-full aspect-[4/5] md:max-h-[500px] object-cover object-top"
                             />
                         </div>
-                        {/* Box chỉ số nổi bật */}
-                        <div className="absolute -bottom-6 -left-6 bg-red-600 text-white p-6 rounded-xl hidden md:block shadow-xl">
+
+                        {/* Box chỉ số nổi bật - Chỉnh lại bottom để không bị trôi quá xa */}
+                        <div className="absolute -bottom-6 -left-4 bg-red-600 text-white p-4 rounded-xl hidden md:block shadow-xl z-20">
                             <p className="text-4xl font-bold">25+</p>
-                            <p className="text-sm uppercase tracking-widest">Năm kinh nghiệm</p>
+                            <p className="text-sm uppercase tracking-widest font-semibold">Năm kinh nghiệm</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-white mt-10">
                 <div className="max-w-7xl mx-auto px-6">
                     <div className="flex flex-col md:flex-row items-center gap-10 bg-gray-50 rounded-3xl p-8 md:p-16 shadow-inner">
 
