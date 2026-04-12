@@ -107,10 +107,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                             <span className="text-red-400">📍</span>
                             Số 166 Lê Duẩn, Phường Mỹ Trà, Đồng Tháp
                         </p>
-                        <p className="flex items-center gap-2">
+                        <a href={"tel:02773852252"} className="flex items-center gap-2">
                             <span className="text-red-400">📞</span>
                             02773.852.252
-                        </p>
+                        </a>
                         <p className="flex items-center gap-2">
                             <span className="text-red-400">📧</span>
                             mtcdongthap@gmail.com
