@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* TOP BAR */}
         <div className="bg-[#1e3a8a] text-white py-2 px-6 text-xs md:text-sm flex justify-between items-center">
             <div className="flex space-x-4">
-                <span>📞 02773.852.252</span>
+                <span>📞 <a href="tel:02773852252"></a> 02773.852.252</span>
                 <span className="hidden md:inline">📧 mtcdongthap@gmail.com</span>
             </div>
             <div className="flex items-center space-x-2">
