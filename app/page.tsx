@@ -300,9 +300,9 @@ export default function LandingPage() {
                                 <div className="flex items-start gap-3 border-t pt-4">
                                     <span className="text-[#292c8f] font-bold min-w-[100px]">Điện thoại:</span>
                                     <div >
-                                        <a className="hover:text-red-600 transition-colors" href="tel:02773852252">02773 852 252</a>
+                                        <a className="hover:text-red-600 transition-colors" href="tel:02773852252">02773 852 252 </a>
                                          -
-                                        <a className="hover:text-red-600 transition-colors" href="tel:027738574942">02773 857 4942</a>
+                                        <a className="hover:text-red-600 transition-colors" href="tel:027738574942"> 02773 857 4942</a>
 
                                     </div>
                                 </div>
