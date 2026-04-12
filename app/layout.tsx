@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     </div>
                 </div>
                 <div className="hidden md:flex space-x-8 font-semibold text-gray-700">
-                    <a href="#" className="hover:text-red-600 transition">Trang chủ</a>
+                    <Link href="/" className="hover:text-red-600 transition">Trang chủ</Link>
                     <Link href="/about" className="hover:text-red-600 transition">Giới thiệu</Link>
                     <a href="#projects" className="hover:text-red-600 transition">Dự án</a>
                     <a href="#contact" className="hover:text-red-600 transition">Liên hệ</a>
@@ -91,8 +91,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div>
                     <h3 className="text-lg font-bold mb-6 border-l-4 border-red-500 pl-3 uppercase">Liên kết</h3>
                     <ul className="space-y-3 text-sm text-gray-300">
-                        <li><a href="https://www.minhthanhelectric.com.vn" className="hover:text-white transition">Trang chủ</a></li>
-                        <li><a href="/about" className="hover:text-white transition">Giới thiệu công ty</a></li>
+                        <li><Link href="/" className="hover:text-white transition">Trang chủ</Link></li>
+                        <li><Link href="/about" className="hover:text-white transition">Giới thiệu công ty</Link></li>
                         <li><a href="#projects" className="hover:text-white transition">Dự án tiêu biểu</a></li>
                         <li><a href="#news" className="hover:text-white transition">Tin tức & Sự kiện</a></li>
                         <li><a href="#contact" className="hover:text-white transition">Liên hệ báo giá</a></li>
