@@ -69,7 +69,7 @@ export default function LandingPage() {
                             <p className="hidden lg:block"> {/* Trên màn hình vừa, ẩn bớt đoạn này để không bị tràn chiều cao */}
                                 Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững.
                             </p>
-                            <p className="lg:mt-2">
+                            <p className="lg:mt-2 lg:pt-15 md:pt-10">
                                 Lấy phương châm <span className="font-bold">&quot;Niềm tin của bạn!&quot;</span> làm kim chỉ nam, <span className="font-bold uppercase">Minh Thanh</span> luôn đồng hành cùng quý khách.
                             </p>
                         </div>
@@ -188,7 +188,7 @@ export default function LandingPage() {
             </section>
 
             {/* tin tuc SECTION  */}
-            <section className="py-8 bg-white max-w-7xl mx-auto px-4 md:px-10">
+            <section id={"news"} className="py-8 bg-white max-w-7xl mx-auto px-4 md:px-10">
                 {/* 1. Title Tin tức ở giữa */}
                 <h2 className="text-2xl md:text-4xl font-bold text-[#292c8f] uppercase text-center mb-12 tracking-tight">
                     Tin tức & Sự kiện
