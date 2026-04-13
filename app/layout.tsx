@@ -31,13 +31,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* NAVIGATION */}
         <nav className="sticky top-0 z-50 bg-white shadow-md">
-            <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-                <div className="flex items-center -ml-10">
+            {/* Thay px-auto thành px-4 (mobile) và md:px-8 (desktop) để tránh mất content */}
+            <div className="max-w-7xl mx-auto px-4 md:px-8 py-3 flex justify-between items-center">
+
+                {/* LOGO - Bỏ margin âm -ml-10 để tránh bị văng khỏi màn hình */}
+                <div className="flex items-center shrink-0">
                     <Link href="/" onClick={closeMenu} className="block">
                         <img
                             src="/2026_MTC_WEB/2026_MTC_WEB_ANH/2026%20WEB-BANG%20HIEU.png"
                             alt="Minh Thanh Logo"
-                            className="h-10  md:h-12 w-auto object-contain transition-transform hover:scale-120"
+                            className="h-10 md:h-12 w-auto object-contain transition-transform hover:scale-110"
                         />
                     </Link>
                 </div>
@@ -47,14 +50,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Link href="/" className="hover:text-red-600 transition">Trang Chủ</Link>
                     <Link href="/about" className="hover:text-red-600 transition">Giới Thiệu</Link>
                     <Link href="/news" className="hover:text-red-600 transition">Tin Tức</Link>
-                    {/*<a href="#contact" className="hover:text-red-600 transition">Liên Hệ</a>*/}
                 </div>
 
                 {/* HAMBURGER BUTTON */}
-                <div className="md:hidden">
+                <div className="md:hidden flex items-center">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="text-blue-900 p-2 focus:outline-none"
+                        className="text-blue-900 p-2 focus:outline-none hover:bg-gray-100 rounded-lg transition"
                         aria-label="Toggle Menu"
                     >
                         <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -69,12 +71,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             {/* MOBILE MENU - Trượt mượt mà */}
-            <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white border-t ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div
+                className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white border-t 
+        ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}
+            >
                 <div className="flex flex-col space-y-4 p-6 font-semibold text-gray-700">
-                    <Link href="/" onClick={closeMenu} className="hover:text-red-600 transition">Trang Chủ</Link>
-                    <Link href="/about" onClick={closeMenu} className="hover:text-red-600 transition">Giới Thiệu</Link>
+                    <Link href="/" onClick={closeMenu} className="hover:text-red-600 transition border-b border-gray-50 pb-2">Trang Chủ</Link>
+                    <Link href="/about" onClick={closeMenu} className="hover:text-red-600 transition border-b border-gray-50 pb-2">Giới Thiệu</Link>
                     <Link href="/news" onClick={closeMenu} className="hover:text-red-600 transition">Tin Tức</Link>
-                    {/*<a href="#contact" onClick={closeMenu} className="hover:text-red-600 transition">Liên Hệ</a>*/}
                 </div>
             </div>
         </nav>
