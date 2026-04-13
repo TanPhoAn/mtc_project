@@ -225,10 +225,13 @@ export default function LandingPage() {
                     <div className="flex-1 md:w-2/5 lg:max-w-[45%] flex flex-col-reverse gap-4">
                         <div className="flex-1 border-4 border-gray-100 rounded-xl overflow-hidden shadow-sm">
 
+
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1961.7233785959895!2d105.63960451742943!3d10.465403728789196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a65af8f2fa2e3%3A0x2dfdb6f989f65da5!2sC%C3%B4ng%20Ty%20TNHH%20Minh%20Thanh!5e0!3m2!1svi!2s!4v1776078272625!5m2!1svi!2s"
-                                className="w-full h-full min-h-[300px] md:min-h-[400px] border-0 "  allowFullScreen={true} loading="lazy"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5835.309590421843!2d105.63856669858738!3d10.466650768033903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a65af8f2fa2e3%3A0x2dfdb6f989f65da5!2sC%C3%B4ng%20Ty%20TNHH%20Minh%20Thanh!5e0!3m2!1svi!2s!4v1776079625375!5m2!1svi!2s"
+                                className="w-full h-full min-h-[400px] md:min-h-[500px] border-0 "
+                                allowFullScreen={true} loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"></iframe>
+
                         </div>
                         <div
                             className="bg-[#292c8f] text-white p-5 rounded-xl flex flex-col sm:flex-row justify-between items-center gap-4">
