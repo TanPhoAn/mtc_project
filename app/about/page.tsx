@@ -51,7 +51,7 @@ export default function AboutPage() {
                         </div>
 
                         {/* Box chỉ số nổi bật - Chỉnh lại bottom để không bị trôi quá xa */}
-                        <div className="absolute -bottom-6 -left-4 bg-red-600 text-white p-4 rounded-xl hidden md:block shadow-xl z-20">
+                        <div className="absolute -bottom-6 -left-4 bg-red-600 text-white p-4 rounded-xl lg:-left-8  md:left-10 md:p-3 md:block shadow-xl z-20">
                             <p className="text-4xl font-bold">25+</p>
                             <p className="text-sm uppercase tracking-widest font-semibold">Năm kinh nghiệm</p>
                         </div>
