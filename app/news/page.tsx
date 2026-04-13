@@ -1,39 +1,23 @@
 import React from 'react';
 import Link from 'next/link';
+import {newsData} from '@/data/newsData';
 
-const newsData = [
-    {
-        id: 1,
-        title: "LỄ KÝ KẾT THỎA THUẬN HỢP TÁC VỚI TRƯỜNG CAO ĐẲNG CƠ ĐIỆN",
-        date: "12/03/2026",
-        image: "/2026_MTC_WEB/2026_MTC_WEB_ANH/MTC - LE KY KET THUC TAP/4.jpg",
-        description: "Ngày 12/3/2026 tại CƠ SỞ ĐÀO TẠO NGHỀ ĐỒNG THÁP đã diễn ra lễ ký kết hợp tác đào tạo..."
-    },
-    {
-        id: 2,
-        title: "MINH THANH TRIỂN KHAI DỰ ÁN ĐIỆN NĂNG LƯỢNG MẶT TRỜI TẠI KCN",
-        date: "05/04/2026",
-        image: "/2026_MTC_WEB/2026_MTC_WEB_ANH/du-an-2.jpg",
-        description: "MTC chính thức khởi động dự án lắp đặt hệ thống điện mặt trời công suất lớn..."
-    },
-    // Thêm các tin khác ở đây...
-];
 export default function NewsPage() {
     return (
         <main className="bg-gray-50 min-h-screen pb-20">
             {/* Banner Header */}
             <section className="bg-[#1e3a8a] py-16 text-white text-center">
                 <h1 className="text-3xl md:text-5xl font-bold uppercase tracking-tight">Tin tức & Sự kiện</h1>
-                <p className="mt-4 text-blue-200">Cập nhật những hoạt động mới nhất của Minh Thanh MTC</p>
+                <p className="mt-4 text-blue-200">Cập nhật những hoạt động mới nhất của Công Ty Minh Thanh</p>
             </section>
 
             {/* Danh sách tin tức */}
-            <section className="max-w-7xl mx-auto px-6 -mt-10">
+            <section className="max-w-7xl mx-auto px-6 mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {newsData.map((item) => (
                         <div key={item.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group flex flex-col">
                             {/* Ảnh tin tức */}
-                            <div className="relative h-56 overflow-hidden">
+                            <div className="relative h-70 overflow-hidden">
                                 <img
                                     src={item.image}
                                     alt={item.title}
@@ -70,3 +54,4 @@ export default function NewsPage() {
         </main>
     );
 }
+
