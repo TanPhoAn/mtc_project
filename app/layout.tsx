@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Link href="/" onClick={closeMenu} className="hover:text-red-600 transition">Trang Chủ</Link>
                     <Link href="/about" onClick={closeMenu} className="hover:text-red-600 transition">Giới Thiệu</Link>
                     <Link href="/news" onClick={closeMenu} className="hover:text-red-600 transition">Tin Tức</Link>
-                    <a href="#contact" onClick={closeMenu} className="hover:text-red-600 transition">Liên Hệ</a>
+                    {/*<a href="#contact" onClick={closeMenu} className="hover:text-red-600 transition">Liên Hệ</a>*/}
                 </div>
             </div>
         </nav>
