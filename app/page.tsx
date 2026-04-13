@@ -32,15 +32,15 @@ export default function LandingPage() {
     return (
         <main className={"bg-white"}>
             {/* HERO SECTION */}
-            <section className="relative h-auto flex flex-row items-center justify-between bg-white px-2 md:px-16 py-6 md:py-8 gap-2 md:gap-8">
-                <div className="flex-[3] flex justify-start items-center">
+            <section className="relative flex flex-row items-center justify-between bg-white px-2 md:px-16 py-6 md:py-8 gap-2 md:gap-8">
+                <div className="flex-[3] flex items-center h-26 md:h-40 lg:h-50">
                     <img
                         src="/2026_MTC_WEB/2026_MTC_WEB_ANH/2026%20WEB-BANG%20HIEU.png"
                         alt="Minh Thanh Banner"
-                        className="w-full h-auto max-h-[20vh] md:max-h-[40vh] object-contain"
+                        className="w-full h-full object-contain"
                     />
                 </div>
-                <div className="flex-1 flex justify-end items-center min-w-[60px] max-w-[80px] md:max-w-[180px]">
+                <div className="flex-1 flex justify-end items-center min-w-[60px] max-w-[70px] md:max-w-[170px]">
                     <img
                         src="/2026_MTC_WEB/2026_MTC_WEB_ANH/LOGO%20TTP.jpg"
                         alt="TTP Certification"
@@ -81,7 +81,7 @@ export default function LandingPage() {
                                 Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững.
                             </p>
                             <p className="lg:mt-2 lg:pt-15 md:pt-10">
-                                Lấy phương châm <span className="font-bold">"Niềm tin của bạn!"</span> làm kim chỉ nam, <span className="font-bold uppercase">Minh Thanh</span> luôn đồng hành cùng quý khách.
+                                Lấy phương châm <span className="font-bold">&quot;Niềm tin của bạn!&quot;</span> làm kim chỉ nam, <span className="font-bold uppercase">Minh Thanh</span> luôn đồng hành cùng quý khách.
                             </p>
                         </div>
                         <div className="text-[#292c8f] text-right mt-1 md:mt-2 text-lg md:text-xl font-normal italic">
