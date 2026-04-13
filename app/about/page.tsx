@@ -65,12 +65,9 @@ export default function AboutPage() {
                         {/* PHẦN LOGO MINH HỌA */}
                         <div className="flex-1 flex flex-col items-center justify-center space-y-4">
                             <div className="text-center">
-                                <h2 className="text-6xl md:text-8xl font-black text-red-600 tracking-tighter">MTC</h2>
-                                <p className="text-[#292c8f] text-xl md:text-2xl font-bold italic mt-2">
-                                    Niềm tin của bạn!
-                                </p>
+                                <img src="/2026_MTC_WEB/2026_MTC_WEB_ANH/2024_MTC_LOGO_TIENG_VIET.jpg" alt=""/>
                             </div>
-                            <div className="h-1 w-24 bg-gray-300 rounded-full mt-4"></div>
+
                         </div>
 
                         {/* PHẦN Ý NGHĨA */}
