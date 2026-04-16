@@ -18,7 +18,7 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ id:
     // ... các phần import và await params giữ nguyên
 
     return (
-        <main className="max-w-4xl mx-auto py-20 px-6">
+        <main className="max-w-4xl mx-auto py-20 px-6 bg-white">
             {/* 1. Ảnh bìa lớn & Tiêu đề */}
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-[#292c8f] uppercase leading-tight">
                 {item.title}

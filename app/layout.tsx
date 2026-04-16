@@ -50,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <Link href="/" className="hover:text-red-600 transition">Trang Chủ</Link>
                     <Link href="/about" className="hover:text-red-600 transition">Giới Thiệu</Link>
                     <Link href="/news" className="hover:text-red-600 transition">Tin Tức</Link>
+                    <Link href="/projects" className="hover:text-red-600 transition">Dự Án</Link>
                 </div>
 
                 {/* HAMBURGER BUTTON */}

@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function LandingPage() {
     // Lấy tin tức mới nhất từ mảng dữ liệu (bài có index cuối cùng)
     const latestNews = newsData[newsData.length - 1];
-
+    const latestProjects = 1;
     const projectsData = [
         {
             title: "CẢI TẠO, NÂNG CẤP TBA 2 x 3P -2 MVA, 220,4KV",
@@ -162,9 +162,9 @@ export default function LandingPage() {
                         ))}
                     </div>
                     <div className="text-center mt-12">
-                        <button className="px-8 py-4 bg-[#292c8f] text-white text-xl font-bold rounded-lg shadow-md hover:bg-blue-800 transition-all uppercase">
+                        <a href={"/projects"} className="cursor-pointer px-8 py-4 bg-[#292c8f] text-white text-xl font-bold rounded-lg shadow-md hover:bg-blue-800 transition-all uppercase">
                             Xem thêm các dự án khác
-                        </button>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -269,7 +269,7 @@ export default function LandingPage() {
                             <h3 className="text-xl md:text-2xl font-bold text-[#292c8f] mb-6 uppercase">Phân xưởng cơ điện lạnh</h3>
                             <div className="space-y-4 text-gray-700 text-base md:text-lg">
                                 <p><span className="text-[#292c8f] font-bold min-w-[100px] inline-block">Địa chỉ:</span> Số 158-160 Lê Duẩn, Mỹ Trà, Đồng Tháp</p>
-                                <p className="border-t pt-4"><span className="text-[#292c8f] font-bold min-w-[100px] inline-block">Điện thoại:</span> 02773 858 169</p>
+                                <a href={"tel:02773858169"}><p className="border-t pt-4"><span className="text-[#292c8f] font-bold min-w-[100px] inline-block">Điện thoại:</span> 02773 858 169</p></a>
                             </div>
                         </div>
                     </div>
