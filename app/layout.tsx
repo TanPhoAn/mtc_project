@@ -14,7 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
     return (
         <html lang="vi" className="scroll-smooth">
-        <body className={`${inter.className} bg-white text-gray-900`}>
+        <body className={`${inter.className} bg-white `}>
 
         {/* TOP BAR */}
         <div className="bg-[#1e3a8a] text-white py-2 px-6 text-xs md:text-sm flex justify-between items-center">
@@ -71,7 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
             </div>
 
-            {/* MOBILE MENU - Trượt mượt mà */}
+            {/* MOBILE MENU */}
             <div
                 className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white border-t 
         ${isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'}`}
