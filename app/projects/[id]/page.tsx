@@ -39,27 +39,26 @@ export default async function ProjectDetail({ params }: { params:Promise<{ id: s
                 {/* Các ảnh phụ (nếu có) */}
                 <div className="flex flex-col gap-16">
                     {project.images.slice(1).map((img, index) => (
-                        <div key={index} className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center group">
+                        /* Sử dụng grid-cols-4 để chia nhỏ tỉ lệ hơn */
+                        <div key={index} className="grid grid-cols-1 lg:grid-cols-4 gap-6 items-center group">
 
-                            {/* Khối chứa ảnh: Chiếm 2/3 chiều ngang */}
-                            <div className="lg:col-span-2 overflow-hidden rounded-2xl shadow-lg bg-gray-50">
+                            {/* Ảnh chiếm 3/4 (75%) -> Ảnh sẽ to hơn hẳn so với bản cũ */}
+                            <div className="lg:col-span-3 overflow-hidden rounded-2xl shadow-xl bg-gray-50">
                                 <img
                                     src={img.url}
                                     alt={img.caption}
-                                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.01]"
                                 />
                             </div>
 
-                            {/* Khối chứa Caption: Nằm ngang hoàn toàn */}
+                            {/* Caption chiếm 1/4 còn lại */}
                             {img.caption && (
-                                <div className="flex items-center w-full lg:w-max">
-                                    <div className="flex items-center gap-4 p-4 bg-white rounded-xl border-l-4 border-red-600 shadow-md min-w-max">
-                                        {/* Phần "HÌNH X" */}
-                                        <span className="text-sm font-bold text-red-600 uppercase tracking-wider whitespace-nowrap border-r border-gray-200 pr-4">
-                            {`Hình ${index + 2}`}
+                                /* Thêm -ml-12 trên desktop để caption "lấn" vào vùng gap, tạo cảm giác ảnh chiếm gần hết màn hình */
+                                <div className="flex items-center w-full  pl-10">
+                                    <div className="flex items-center gap-4 p-4 bg-white/90 backdrop-blur-sm rounded-xl border-l-4 border-red-600 shadow-xl min-w-max">
+                        <span className="text-sm font-bold text-red-600 uppercase tracking-wider whitespace-nowrap border-r border-gray-200 pr-4">
+                            {`Hình ${index + 1}`}
                         </span>
-
-                                        {/* Phần nội dung caption nằm ngang hoàn toàn */}
                                         <p className="text-gray-700 text-base italic font-semibold whitespace-nowrap pr-2">
                                             {img.caption}
                                         </p>
