@@ -3,9 +3,13 @@ import { useState } from 'react';
 import './globals.css';
 import { Inter } from 'next/font/google';
 import Link from 'next/link';
-
+import { Montserrat } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
-
+const montserrat = Montserrat({
+    subsets: ['latin', 'vietnamese'], // Nhớ thêm vietnamese để không lỗi dấu
+    weight: ['400', '700'],          // Load cả 400 (normal) và 700 (bold)
+    variable: '--font-montserrat',   // Tạo biến CSS nếu cần dùng ở nơi khác
+});
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -14,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
     return (
         <html lang="vi" className="scroll-smooth">
-        <body className={`${inter.className} bg-white `}>
+        <body className={`${montserrat.className} bg-white `}>
 
         {/* TOP BAR */}
         <div className="bg-[#1e3a8a] text-white py-2 px-6 text-xs md:text-sm flex justify-between items-center">

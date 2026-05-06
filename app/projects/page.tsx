@@ -11,7 +11,7 @@ export default function ProjectsPage() {
                     <div key={project.id} className="group bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300">
                         <div className="relative h-60 w-full overflow-hidden">
                             <img
-                                src={project.img}
+                                src={project.thumbnail}
                                 alt={project.title}
                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                             />
