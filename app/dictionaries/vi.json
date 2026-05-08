@@ -1,0 +1,37 @@
+{
+  "home": {
+    "about_title": "Thành lập từ năm 2000, <span class='font-bold'>Công ty TNHH Minh Thanh</span> là nhà thầu uy tín với hơn 25 năm kinh nghiệm chuyên tư vấn, lắp đặt hệ thống điện đến 35kV, chiếu sáng đô thị và năng lượng mặt trời.",
+    "company_name": " Công ty TNHH Minh Thanh",
+    "about_desc_long": "Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững.",
+    "slogan": "Lấy phương châm <span className='font-bold'>&quot;Niềm tin của bạn!&quot; </span> làm kim chỉ nam, <span className='font-bold'>Minh Thanh</span> luôn đồng hành cùng quý khách.",
+    "view_more": "Xem thêm...",
+    "sectors_title": "Lĩnh vực hoạt động",
+    "sector_1_title": "Điện công nghiệp & Dân dụng",
+    "sector_1_desc": "Thi công, lắp đặt hệ thống điện trọn gói cho nhà máy và hộ gia đình.",
+    "sector_2_title": "Đường dây & Trạm biến áp",
+    "sector_2_desc": "Thi công hệ thống đường dây và trạm biến áp lên đến 35kV.",
+    "sector_3_title": "Chiếu sáng đô thị",
+    "sector_3_desc": "Giải pháp chiếu sáng đường phố, khu đô thị hiện đại và tiết kiệm điện.",
+    "sector_4_title": "Năng lượng mặt trời",
+    "sector_4_desc": "Thi công, lắp đặt hệ thống pin năng lượng mặt trời tối ưu hiệu suất cho doanh nghiệp.",
+    "thibidi_title": "ĐẠI LÝ CHÍNH HÃNG MÁY BIẾN THẾ THIBIDI NĂM 2026",
+    "projects_title": "Công trình tiêu biểu",
+    "news_title": "Tin tức & Sự kiện",
+    "news_detail": "Đọc bài viết chi tiết",
+    "news_view_all": "Xem tất cả tin tức",
+    "contact_title": "Thông tin Liên hệ",
+    "view_all_projects": "Xem thêm các dự án khác",
+    "contact_title_us": "Liên hệ với chúng tôi",
+    "working_hours": "Thời gian làm việc",
+    "days_range": "Thứ 2 — Thứ 7",
+    "morning": "Sáng",
+    "afternoon": "Chiều",
+    "headquarters": "Trụ sở chính",
+    "workshop": "Phân xưởng cơ điện lạnh",
+    "address_label": "Địa chỉ",
+    "phone_label": "Điện thoại",
+    "email_label": "Email",
+    "website_label": "Website"
+
+  }
+}

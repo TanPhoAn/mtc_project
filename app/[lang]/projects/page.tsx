@@ -1,7 +1,13 @@
 import Link from 'next/link';
 import { projectData } from '@/data/projectsData';
+import {getDictionary} from "@/app/dictionaries";
 
-export default function ProjectsPage() {
+export default async function ProjectsPage({params}: { params: Promise<{ lang: 'vi' | 'en' }> }) {
+    // 1. Chờ lấy biến lang từ params
+    const { lang } = await params;
+
+    // 2. Lấy từ điển tương ứng (nếu ông muốn dịch tiêu đề "Tin tức & Sự kiện")
+    const dict = await getDictionary(lang);
     return (
         <div className="max-w-7xl mx-auto px-4 py-12">
             <h1 className="text-4xl font-bold text-blue-900 mb-8 text-center">Công Trình Tiêu Biểu</h1>
@@ -23,7 +29,7 @@ export default function ProjectsPage() {
                             </div>
 
                             <Link
-                                href={`/projects/${project.id}`}
+                                href={`/${lang}/projects/${project.id}`}
                                 className="inline-block font-semibold text-red-600 hover:text-red-700 transition mb-1"
                             >
                                 Xem chi tiết →

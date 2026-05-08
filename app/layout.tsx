@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     const closeMenu = () => setIsOpen(false);
 
     return (
-        <html lang="vi" className="scroll-smooth">
+        <html lang="vi" className="scroll-smooth" suppressHydrationWarning>
         <body className={`${montserrat.className} bg-white `}>
 
         {/* TOP BAR */}
@@ -52,9 +52,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {/* DESKTOP MENU */}
                 <div className="hidden md:flex space-x-8 font-semibold text-gray-700">
                     <Link href="/" className="hover:text-red-600 transition">Trang Chủ</Link>
-                    <Link href="/about" className="hover:text-red-600 transition">Giới Thiệu</Link>
-                    <Link href="/news" className="hover:text-red-600 transition">Tin Tức</Link>
-                    <Link href="/projects" className="hover:text-red-600 transition">Dự Án</Link>
+                    <Link href="/vi/about" className="hover:text-red-600 transition">Giới Thiệu</Link>
+                    <Link href="/vi/news" className="hover:text-red-600 transition">Tin Tức</Link>
+                    <Link href="/vi/projects" className="hover:text-red-600 transition">Dự Án</Link>
                 </div>
 
                 {/* HAMBURGER BUTTON */}
