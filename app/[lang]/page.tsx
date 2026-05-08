@@ -2,14 +2,14 @@
 import { newsData } from "@/data/newsData";
 import Link from "next/link";
 import { getDictionary } from '@/app/dictionaries';
-import {projectData} from "@/data/projectsData";
+import { projectData } from "@/data/projectsData";
 
 
 
 export default async function LandingPage({ params }: { params: Promise<{ lang: 'vi' | 'en' }> }) {    // Lấy tin tức mới nhất từ mảng dữ liệu (bài có index cuối cùng)
     const latestNews = newsData[newsData.length - 1];
     const latestProjects = 1;
-    const {lang} = await params;
+    const { lang } = await params;
     const dict = await getDictionary(lang);
     // const projectsData = [
     //     {
@@ -85,11 +85,11 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
                             <p className="hidden lg:block" >
                                 {dict.home.about_desc_long}
                             </p>
-                            <p className="lg:mt-2 lg:pt-15 md:pt-10" dangerouslySetInnerHTML={{ __html: dict.home.slogan}}>
+                            <p className="lg:mt-2 lg:pt-15 md:pt-10" dangerouslySetInnerHTML={{ __html: dict.home.slogan }}>
                             </p>
                         </div>
                         <div className="text-[#292c8f] text-right mt-1 md:mt-2 text-lg md:text-xl font-normal italic">
-                            <Link href={`/${lang}/about`} className="hover:underline">{dict.home.view_more}</Link>
+                            <Link href={`/about`} className="hover:underline">{dict.home.view_more}</Link>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
             {/* LINH VUC HOAT DONG SECTION */}
             <section className="py-24 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-6">
-                    <h2 className="text-[22px] sm:text-2xl md:text-4xl font-extrabold text-[#292c8f] uppercase text-center mb-10 md:mb-16 tracking-tighter md:tracking-tight whitespace-nowrap">
+                    <h2 className="text-[22px] sm:text-2xl md:text-4xl font-extrabold text-[#292c8f] uppercase text-center mb-10 md:mb-16 tracking-tighter md:tracking-tight">
                         {dict.home.sectors_title}
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -172,7 +172,7 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
                     </div>
                     <div className="text-center mt-12">
                         <Link
-                            href={`/${lang}/projects`}
+                            href={`/projects`}
                             className="inline-block px-8 py-4 bg-[#292c8f] text-white text-xl font-bold rounded-lg shadow-md hover:bg-blue-800 transition-all uppercase"
                         >
                             {dict.home.view_all_projects}
@@ -217,10 +217,10 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
 
                                     <div className="mt-auto pt-4 border-t border-gray-200">
                                         <Link
-                                            href={`/${lang}/news/${item.id}`}
+                                            href={`/news/${item.id}`}
                                             className="text-[#292c8f] font-bold flex items-center gap-2 hover:gap-4 transition-all"
                                         >
-                                            {lang === 'vi' ? 'Xem chi tiết' : 'Read more'} <span>→</span>
+                                            {dict.home.read_more} <span>→</span>
                                         </Link>
                                     </div>
                                 </div>
@@ -231,10 +231,10 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
                     {/* Nút xem tất cả tin tức */}
                     <div className="text-center mt-12">
                         <Link
-                            href={`/${lang}/news`}
+                            href={`/news`}
                             className="inline-block px-8 py-3 border-2 border-[#292c8f] text-[#292c8f] font-bold rounded-lg hover:bg-[#292c8f] hover:text-white transition-all uppercase"
                         >
-                            {lang === 'vi' ? 'Tất cả tin tức' : 'All News'}
+                            {dict.home.all_news}
                         </Link>
                     </div>
                 </div>
@@ -282,7 +282,7 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
                             <div className="space-y-4 text-gray-700 text-base md:text-lg">
                                 <p>
                                     <span className="text-[#292c8f] font-bold min-w-[100px] inline-block">{dict.home.address_label}:</span>
-                                    {lang === 'vi' ? 'Số 166 Lê Duẩn, Mỹ Trà, Đồng Tháp' : '166 Le Duan St, My Tra, Dong Thap'}
+                                    {dict.home.address_main}
                                 </p>
                                 <div className="border-t pt-4">
                                     <span className="text-[#292c8f] font-bold min-w-[100px] inline-block">{dict.home.phone_label}:</span>
@@ -299,7 +299,7 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
                             <div className="space-y-4 text-gray-700 text-base md:text-lg">
                                 <p>
                                     <span className="text-[#292c8f] font-bold min-w-[100px] inline-block">{dict.home.address_label}:</span>
-                                    {lang === 'vi' ? 'Số 158-160 Lê Duẩn, Mỹ Trà, Đồng Tháp' : '158-160 Le Duan St, My Tra, Dong Thap'}
+                                    {dict.home.address_workshop}
                                 </p>
                                 <div className="border-t pt-4">
                                     <span className="text-[#292c8f] font-bold min-w-[100px] inline-block">{dict.home.phone_label}:</span>

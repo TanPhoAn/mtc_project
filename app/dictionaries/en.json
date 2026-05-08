@@ -1,8 +1,9 @@
 {
   "home": {
     "about_title": "Established in 2000, <span class='font-bold'>Minh Thanh Co., Ltd.</span>  is a prestigious contractor with over 25 years of experience in consulting and installing electrical systems up to 35kV, urban lighting, and solar energy.",
+    "company_name": "Minh Thanh Co., Ltd.",
     "about_desc_long": "With a team of skilled engineers and a systematic production process, we are committed to providing safe and sustainable energy solutions.",
-    "slogan": "Taking <span class='font-bold'>&quot;Your Trust!&quot;</span> as our compass, <span class='font-bold'>Minh Thanh</span> continuously accompanies you on every journey.",
+    "slogan": "Taking <span class=\"font-bold\">\"Your Trust!\"</span> as our compass, <span class=\"font-bold\">Minh Thanh</span> continuously accompanies you on every journey.",
     "view_more": "View more...",
     "sectors_title": "Our Business Sectors",
     "sector_1_title": "Industrial & Civil Electrical",
@@ -30,6 +31,24 @@
     "address_label": "Address",
     "phone_label": "Phone",
     "email_label": "Email",
-    "website_label": "Website"
+    "website_label": "Website",
+    "address_main": "166 Le Duan St, My Tra, Cao Lanh City, Dong Thap",
+    "address_workshop": "158-160 Le Duan St, My Tra, Cao Lanh City, Dong Thap",
+    "read_more": "Read more",
+    "all_news": "All News"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "news": "News",
+    "projects": "Projects",
+    "toggle_menu": "Toggle Menu"
+  },
+  "footer": {
+    "description": "With over 25 years of experience, we are committed to providing the safest, most sustainable and efficient energy solutions for our customers.",
+    "sectors": "Sectors",
+    "links": "Links",
+    "headquarters": "Headquarters",
+    "all_rights_reserved": "All rights reserved."
   }
 }

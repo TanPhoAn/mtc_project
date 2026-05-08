@@ -49,7 +49,7 @@ export default async function NewsPage({ params }: { params: Promise<{ lang: 'vi
 
                                 <div className="mt-auto pt-4 border-t border-gray-100">
                                     <Link
-                                        href={`/${lang}/news/${item.id}`}
+                                        href={`/news/${item.id}`}
                                         className="text-[#292c8f] font-bold flex items-center gap-2 hover:gap-4 transition-all"
                                     >
                                         {lang === 'vi' ? 'Xem chi tiết' : 'View details'} <span>→</span>

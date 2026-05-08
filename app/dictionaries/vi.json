@@ -1,9 +1,9 @@
 {
   "home": {
     "about_title": "Thành lập từ năm 2000, <span class='font-bold'>Công ty TNHH Minh Thanh</span> là nhà thầu uy tín với hơn 25 năm kinh nghiệm chuyên tư vấn, lắp đặt hệ thống điện đến 35kV, chiếu sáng đô thị và năng lượng mặt trời.",
-    "company_name": " Công ty TNHH Minh Thanh",
+    "company_name": "Công ty TNHH Minh Thanh",
     "about_desc_long": "Với đội ngũ kỹ sư lành nghề và hệ thống sản xuất bài bản, chúng tôi cam kết mang đến những giải pháp năng lượng an toàn và bền vững.",
-    "slogan": "Lấy phương châm <span className='font-bold'>&quot;Niềm tin của bạn!&quot; </span> làm kim chỉ nam, <span className='font-bold'>Minh Thanh</span> luôn đồng hành cùng quý khách.",
+    "slogan": "Lấy phương châm <span class=\"font-bold\">\"Niềm tin của bạn!\" </span> làm kim chỉ nam, <span class=\"font-bold\">Minh Thanh</span> luôn đồng hành cùng quý khách.",
     "view_more": "Xem thêm...",
     "sectors_title": "Lĩnh vực hoạt động",
     "sector_1_title": "Điện công nghiệp & Dân dụng",
@@ -31,7 +31,24 @@
     "address_label": "Địa chỉ",
     "phone_label": "Điện thoại",
     "email_label": "Email",
-    "website_label": "Website"
-
+    "website_label": "Website",
+    "address_main": "Số 166 Lê Duẩn, Mỹ Trà, Đồng Tháp",
+    "address_workshop": "Số 158-160 Lê Duẩn, Mỹ Trà, Đồng Tháp",
+    "read_more": "Xem chi tiết",
+    "all_news": "Tất cả tin tức"
+  },
+  "nav": {
+    "home": "Trang Chủ",
+    "about": "Giới Thiệu",
+    "news": "Tin Tức",
+    "projects": "Dự Án",
+    "toggle_menu": "Mở Menu"
+  },
+  "footer": {
+    "description": "Với hơn 25 năm kinh nghiệm, chúng tôi cam kết mang đến giải pháp năng lượng an toàn, bền vững và hiệu quả nhất cho khách hàng.",
+    "sectors": "Lĩnh vực",
+    "links": "Liên kết",
+    "headquarters": "Trụ sở chính",
+    "all_rights_reserved": "All rights reserved."
   }
 }
