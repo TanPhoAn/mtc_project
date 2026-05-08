@@ -248,7 +248,7 @@ export default async function LandingPage({ params }: { params: Promise<{ lang: 
                     <div className="flex-1 md:w-2/5 lg:max-w-[45%] flex flex-col-reverse gap-4">
                         <div className="flex-1 border-4 border-gray-100 rounded-xl overflow-hidden shadow-sm">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.580468305001!2d105.6324833153342!3d10.4571168925386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a6496924f0975%3A0x6b4a6946059b027d!2zMTY2IEzDqiBEdXnhuqluLCBN4bu5IFRyw6AsIENhbyBMw6puaCwgxJDhu5NuZyBUaMOhcCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1650000000000!5m2!1svi!2s"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.4466896976373!2d105.63807827529627!3d10.465409064852935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a65af8f2fa2e3%3A0x2dfdb6f989f65da5!2sC%C3%B4ng%20Ty%20TNHH%20Minh%20Thanh!5e0!3m2!1svi!2s!4v1778258276741!5m2!1svi!2s"
                                 className="w-full h-full min-h-[400px] md:min-h-[500px] border-0"
                                 allowFullScreen={true}
                                 loading="lazy"
