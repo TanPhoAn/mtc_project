@@ -2,8 +2,9 @@ import React from 'react';
 import { getDictionary } from '../../dictionaries';
 import Link from 'next/link';
 
-export default async function AboutPage({ params }: { params: Promise<{ lang: 'vi' | 'en' }> }) {
-    const { lang } = await params;
+export default async function AboutPage({ params }: { params: Promise<{ lang: string }> }) {
+    const resolvedParams = await params;
+    const lang = resolvedParams.lang as 'vi' | 'en';
     const dict = await getDictionary(lang);
 
     return (

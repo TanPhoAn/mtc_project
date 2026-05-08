@@ -2,8 +2,9 @@ import Link from 'next/link';
 import { projectData } from '@/data/projectsData';
 import {getDictionary} from "@/app/dictionaries";
 
-export default async function ProjectsPage({params}: { params: Promise<{ lang: 'vi' | 'en' }> }) {
-    const { lang } = await params;
+export default async function ProjectsPage({params}: { params: Promise<{ lang: string }> }) {
+    const resolvedParams = await params;
+    const lang = resolvedParams.lang as 'vi' | 'en';
     const dict = await getDictionary(lang);
 
     return (

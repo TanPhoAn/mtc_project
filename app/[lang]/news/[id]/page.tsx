@@ -3,11 +3,13 @@ import { notFound } from 'next/navigation';
 
 // Sửa lại type của params để nhận cả lang và id
 export default async function NewsDetailPage({params}: {
-    params: Promise<{ lang: 'vi' | 'en'; id: string }>
+    params: Promise<{ lang: string; id: string }>
 }) {
 
     // Đợi params resolve để lấy cả lang và id
-    const { lang, id } = await params;
+    const resolvedParams = await params;
+    const lang = resolvedParams.lang as 'vi' | 'en';
+    const id = resolvedParams.id;
 
     // Tìm bài viết theo ID
     const item = newsData.find((n) => String(n.id) === String(id));

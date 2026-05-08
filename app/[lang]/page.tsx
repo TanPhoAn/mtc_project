@@ -6,10 +6,9 @@ import { projectData } from "@/data/projectsData";
 
 
 
-export default async function LandingPage({ params }: { params: Promise<{ lang: 'vi' | 'en' }> }) {    // Lấy tin tức mới nhất từ mảng dữ liệu (bài có index cuối cùng)
-    const latestNews = newsData[newsData.length - 1];
-    const latestProjects = 1;
-    const { lang } = await params;
+export default async function LandingPage({ params }: { params: Promise<{ lang: string }> }) {
+    const resolvedParams = await params;
+    const lang = resolvedParams.lang as 'vi' | 'en';
     const dict = await getDictionary(lang);
     // const projectsData = [
     //     {

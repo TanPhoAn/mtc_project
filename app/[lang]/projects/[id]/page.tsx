@@ -2,9 +2,11 @@ import { projectData } from '@/data/projectsData';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
-export default async function ProjectDetail({ params }: { params:Promise<{ lang: 'vi' | 'en', id: string }> }) {
+export default async function ProjectDetail({ params }: { params:Promise<{ lang: string, id: string }> }) {
     // Tìm project theo ID
-    const { lang, id } = await params;
+    const resolvedParams = await params;
+    const lang = resolvedParams.lang as 'vi' | 'en';
+    const id = resolvedParams.id;
     const project = projectData.find((p) => p.id === id);
 
     // Nếu không tìm thấy thì trả về trang 404
